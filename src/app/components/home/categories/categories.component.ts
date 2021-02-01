@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
+import { map, switchMap } from 'rxjs/operators';
+import { Product, ProductService } from 'src/app/services/product.service';
 
 @Component({
 	selector: 'app-categories',
