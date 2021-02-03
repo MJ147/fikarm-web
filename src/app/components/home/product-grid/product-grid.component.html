@@ -1,5 +1,5 @@
 <mat-grid-list [cols]="columns$ | async" gutterSize="16">
-	<mat-grid-tile class="tile" *ngFor="let product of products">
+	<mat-grid-tile class="tile mdc-elevation--z3" *ngFor="let product of products" [class.mat-elevation-z8]="false">
 		<a class="tile__content" fxLayout="column" fxLayoutAlign="center center" [routerLink]="['/products', product.id]">
 			<span class="tile__price-tag" ngClass.xs="tile__price-tag--xs">
 				{{ product.price | currency: 'USD':'symbol':'.0' }}

@@ -1,15 +1,13 @@
-// @import '../../../styles/theme';
+@import '../../../../variables.less';
 
 :host {
 	display: block;
 }
 
 .tile {
-	// background-color: mat-color($app-background, card);
-	background-color: white;
+	background-color: @app-background;
 
 	&:hover {
-		// @include mat-elevation(4);
 		transition: 0.3s;
 	}
 }
@@ -25,7 +23,7 @@
 }
 
 .tile__price-tag {
-	// color: mat-color($app-foreground, text);
+	color: @app-foreground;
 	font-size: 16px;
 	font-weight: 700;
 	position: absolute;
@@ -45,18 +43,18 @@
 }
 
 .tile__title {
-	// color: mat-color($app-foreground, text);
+	color: @app-foreground;
 	font-family: 'Abril Fatface', cursive;
-	// font-size: mat-font-size($app-typography, headline);
-	// line-height: mat-line-height($app-typography, headline);
+	font-size: 24px;
+	line-height: 32px;
 }
 
 .tile__title--lg {
-	// font-size: mat-font-size($app-typography, display-1);
-	// line-height: mat-line-height($app-typography, display-1);
+	font-size: 34px;
+	line-height: 40px;
 }
 
 .tile__title--xs {
-	// font-size: mat-font-size($app-typography, title);
-	// line-height: mat-line-height($app-typography, title);
+	font-size: 20px;
+	line-height: 32px;
 }

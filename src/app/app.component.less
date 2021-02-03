@@ -1,0 +1,46 @@
+@import '../variables.less';
+
+:host {
+	display: block;
+	height: 100%;
+}
+
+mat-sidenav-container {
+	height: 100%;
+}
+
+.toolbar {
+	background-color: white;
+	position: relative;
+}
+
+.toolbar__logo-title-group {
+	position: absolute;
+	right: 50%;
+	left: 50%;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+.toolbar__logo {
+	transform: scale(1.5);
+	color: black;
+	margin-right: 16px;
+}
+
+.toolbar__title {
+	color: rgba(0, 0, 0, 0.87);
+	font-family: 30px 'Titillium Web', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.toolbar__icon-button {
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.toolbar__shopping-cart-button {
+	margin-right: 8px;
+}
