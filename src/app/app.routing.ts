@@ -7,6 +7,6 @@ export const routes: Route[] = [
 	},
 	{
 		path: 'products/:productId',
-		loadChildren: () => import('./product/product.module').then((m) => m.ProductModule),
+		loadChildren: () => import('./components/product/product.module').then((m) => m.ProductModule),
 	},
 ];

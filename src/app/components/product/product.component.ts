@@ -1,4 +1,4 @@
-import { Product, ProductService } from './../services/product.service';
+import { Product, ProductService } from './../../services/product.service';
 import { Observable } from 'rxjs';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
