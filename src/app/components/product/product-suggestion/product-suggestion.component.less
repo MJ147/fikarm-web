@@ -1,0 +1,35 @@
+@import '../../../../variables.less';
+
+:host {
+	display: block;
+}
+
+.tile {
+	background-color: mat-color(@color-background-white, card);
+
+	&:hover {
+		// @include mat-elevation(4);
+		transition: 0.3s;
+	}
+}
+
+.tile__content {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.tile__thumbnail {
+	background: no-repeat 75% 75%;
+	background-size: contain;
+	height: 75%;
+	width: 75%;
+}
+
+.info__title {
+	// color: @color-text;
+	// font-size: @app-typography;
+	// font-weight: @app-typograph;
+	// line-height: @app-typography;
+	margin: 0 0 24px;
+}

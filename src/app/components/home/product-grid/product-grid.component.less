@@ -1,0 +1,60 @@
+@import '../../../../variables.less';
+
+:host {
+	display: block;
+}
+
+.tile {
+	background-color: @color-background-white;
+
+	&:hover {
+		box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+		transition: 0.3s;
+	}
+}
+
+.tile__content {
+	display: block;
+	height: 100%;
+	width: 100%;
+	padding: 16px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+}
+
+.tile__price-tag {
+	color: @color-text;
+	font-size: 16px;
+	font-weight: 700;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.tile__price-tag--xs {
+	font-size: 14px;
+}
+
+.tile__thumbnail {
+	background: no-repeat 50% 50%;
+	background-size: contain;
+	height: 50%;
+	width: 50%;
+}
+
+.tile__title {
+	color: @color-text;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.tile__title--lg {
+	font-size: 34px;
+	line-height: 40px;
+}
+
+.tile__title--xs {
+	font-size: 20px;
+	line-height: 32px;
+}

@@ -1,0 +1,82 @@
+@import '../../../../variables.less';
+
+:host {
+	display: block;
+}
+
+.wrapper {
+	background-color: @color-background-white;
+	padding: 64px 24px;
+	height: 100%;
+}
+
+.wrapper--lt-md {
+	padding: 32px 16px;
+}
+
+.wrapper--gt-md {
+	padding: 128px 24px;
+}
+
+.thumbnail {
+	display: block;
+	margin: 0 auto;
+	max-width: 30vmin;
+}
+
+.info {
+	max-width: 400px;
+}
+
+.info__title {
+	color: @color-text;
+	// font-size: @app-typography;
+	// font-weight: @app-typography;
+	// line-height: @app-typography;
+	margin: 0 0 24px;
+}
+
+.info__description {
+	// color: mat-color(@color-text, secondary-text);
+	// font-size: mat-font-size(@app-typography, subheading-2);
+	// font-weight: mat-font-weight(@app-typography, subheading-2);
+	// line-height: mat-line-height(@app-typography, subheading-1);
+	border-bottom: solid 1px #ddd;
+	padding-bottom: 24px;
+}
+
+.info__bid {
+	margin: 24px 0;
+}
+
+.info__bid-value {
+	color: mat-color(@color-text, text);
+	font-weight: 600;
+	font-size: 72px;
+	line-height: 1em;
+}
+.info__bid-value--lt-md {
+	font-size: 48px;
+}
+
+.info__bid-value-decimal {
+	color: mat-color(@color-text, text);
+	font-weight: 600;
+	font-size: 36px;
+	margin-left: -0.1em;
+}
+
+.info__bid-value-decimal--lt-md {
+	font-size: 24px;
+}
+
+.info__bid-label {
+	color: mat-color(@color-text, hint-text);
+	font-weight: 500;
+	font-size: 20px;
+	margin-left: 16px;
+}
+
+.info__bid-button {
+	width: 100%;
+}
